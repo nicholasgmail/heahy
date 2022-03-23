@@ -39,7 +39,16 @@ html {
   z-index: $zindex-tooltip;
 }
 
-.navbar-light .navbar-nav .nav-link:hover{
+/*button*/
+.btn-purple {
+  background-color: $purple;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: $purple;
+}
+
+.text-purple {
   color: $purple;
 }
 
