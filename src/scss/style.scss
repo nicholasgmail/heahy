@@ -1,0 +1,15 @@
+// style.scss
+// Option B: Include parts of Bootstrap
+
+@charset "utf-8";
+
+@import "./settings";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+@import "~bootstrap/scss/mixins/grid";
+@import "./functions/_functions";
+@import "./mixin/_mixin";
+
+@import "./global";
+@import "./transition";

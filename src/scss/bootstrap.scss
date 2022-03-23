@@ -1,0 +1,13 @@
+// bootstrap.scss
+// Option B: Include parts of Bootstrap
+
+@charset "utf-8";
+
+/* @import "functions/_functions";
+@import "mixin/_mixin"; */
+@import "./settings";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "./utilities";
+
+@import "~bootstrap/scss/bootstrap";

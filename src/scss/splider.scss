@@ -1,0 +1,23 @@
+// style.scss
+// Option B: Include parts of Bootstrap
+
+@charset "utf-8";
+
+@import "./settings";
+
+/*@import "~@splidejs/splide/dist/css/splide.min.css";
+@import "~@splidejs/splide/dist/css/splide-core.min.css";
+@import "~@splidejs/splide/dist/css/themes/splide-skyblue.min.css";*/
+
+.splide__arrow {
+  svg{
+    fill: rgba($red, .9);
+  }
+  &:hover svg {
+    fill: $red;
+  }
+}
+
+.splide--nav > .splide__slider > .splide__track > .splide__list > .splide__slide.is-active, .splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
+  border: 3px solid rgba($red, .9);
+}

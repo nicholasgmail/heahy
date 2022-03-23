@@ -1,0 +1,53 @@
+:root {
+}
+
+html {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.z-0 {
+  z-index: 900;
+}
+
+.z-1 {
+  z-index: $zindex-dropdown;
+}
+
+.z-2 {
+  z-index: $zindex-sticky;
+}
+
+.z-3 {
+  z-index: $zindex-fixed;
+}
+
+.z-4 {
+  z-index: $zindex-modal-backdrop;
+}
+
+.z-5 {
+  z-index: $zindex-modal;
+}
+
+.z-6 {
+  z-index: $zindex-popover;
+}
+
+.z-7 {
+  z-index: $zindex-tooltip;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+  color: $purple;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0.155em;
+  vertical-align: -0.15em;
+  border-top: 0.5em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}

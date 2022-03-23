@@ -1,0 +1,51 @@
+//bootstrap
+$blue: #4BB2EA;
+$orange:#F39320;
+$yellow:#FFDC52;
+$purple: #593F62;
+$green: #80C22A;
+$red: #F03C40;
+$light: #f0f0f0;
+
+//link
+
+// Base font size
+/* $rfs-base-font-size: 1.15rem; */
+$rfs-rem-value: 10;
+// Factor of decrease
+$rfs-factor: 23;
+
+$enable-rounded: false;
+$enable-responsive-font-sizes: true;
+$border-radius: 15px;
+$radius: 8px;
+
+//$font-family-sans-serif: "Raleway", sans-serif;
+//$font-family-sans-serif: 'Helvetica Neue', sans-serif;
+
+//slick
+/* $slick-loader-path: "../../assets/images/"; */
+
+// Breadcrumbs
+$breadcrumb-item-padding-x: 1rem;
+
+//light gallery
+$backdrop-opacity: 0.5;
+
+//формирование базы шрифта
+$size: 14px;
+$line_height: 28px;
+//$family: $font-family-sans-serif;
+$weight: 400;
+$va: 18;
+
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-modal-backdrop: 1040;
+$zindex-modal: 1050;
+$zindex-popover: 1060;
+$zindex-tooltip: 1070;
+
+$spacer: 1rem !default;
+
