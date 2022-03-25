@@ -7,6 +7,12 @@ html {
   font-weight: 400;
 }
 
+@include media-breakpoint-down(sm) {
+  html{
+    font-size: 12px;
+  }
+}
+
 .z-0 {
   z-index: 900;
 }
