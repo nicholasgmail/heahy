@@ -1,4 +1,5 @@
 import dartSass from 'sass';
+import nodeSass from 'node-sass';
 import gulpSass from 'gulp-sass';
 import rename from 'gulp-rename';
 import gulpPostcss from 'gulp-postcss';
@@ -9,8 +10,8 @@ import autoprefixer from 'gulp-autoprefixer';
 import groupCssMediaQueries from 'gulp-group-css-media-queries';
 import nodeSassTildeImporter from 'node-sass-tilde-importer';
 
-const sass = gulpSass(dartSass);
-
+//const sass = gulpSass(dartSass);
+const sass = gulpSass(nodeSass);
 export const scss = () => {
     return app.gulp.src(app.path.src.scss, {sourcemaps: app.isDev})
         .pipe(app.plugins.plumber(

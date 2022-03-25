@@ -1,0 +1,205 @@
+<button class="badge bg-warning fixed-top top-50 translate-middle d-md-none w-15 border-0"
+        type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling">
+    <img src="@img/icons/icons.svg#channel" class="svg-channel-dims ms-4" alt="channel" height="19" width="19">
+</button>
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+     id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">heahy</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <button class="btn btn-purple text-white w-100" type="button">Create private chat</button>
+        <hr>
+        <div class="info" x-data x-ref="text">
+            <div class="card border-0 mb-3">
+                <div class="card-header bg-white border-0">
+                    <div class="d-flex justify-content-between flex-nowrap"><p class="fs-4 mb-0">Here you can:</p>
+                        <img src="@img/icons/icons.svg#ci_close-big" @click="$refs.text.remove()"
+                             class="svg-ci_close-big-dims cr_point my-auto" alt="ci_close-big" width="24"
+                             height="24">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul class="info__list list-unstyled">
+                        {{#each menu.aside}}
+                        <li class="info__list_li ps-3">{{text}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <footer class="card-footer bg-white border-0">
+                    <p>This is a new website so if you like this concept please create your own channel and invite your
+                        friends. Anything goes - memes, political discussion, shitposting, asking for advice or simply
+                        saying hello would help this site to feel alive tremendously. Try it, it's fun!</p>
+                </footer>
+            </div>
+            <hr>
+        </div>
+        <div class="py-2">
+            <p class="fs-4">Private Chats</p>
+            <ul class="list-unstyled">
+                {{#repeat 3}}
+                <li>
+                    <img src="@img/icons/icons.svg#delete" class="svg-delete-dims" alt="delete"
+                         width="14" height="14">
+                    <span class="ms-1">
+                    chat_{{@index}}
+                </span>
+                </li>
+                {{/repeat}}
+            </ul>
+        </div>
+        <hr>
+        <div class="py-2">
+            <p class="fs-4">Followed Channels</p>
+            <ul class="list-unstyled">
+                {{#each channels.followed}}
+                <li>
+                    <img src="@img/icons/icons.svg#bell_slash"
+                         class="svg-bell_slash-dims"
+                         alt="bell_slash"
+                         width="14"
+                         height="14">
+                    <span class="ms-1">
+                {{text}}
+                </span>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <hr>
+        <div class="py-2">
+            <p class="fs-4">Followed Channels</p>
+            <ul class="list-unstyled">
+                {{#each threads.followed}}
+                <li>
+                    <div>
+                        <img src="@img/icons/icons.svg#bell_slash"
+                             class="svg-bell_slash-dims"
+                             alt="bell_slash"
+                             width="14"
+                             height="14">
+                        <p class="d-inline">46246gf</p>
+                    </div>
+                    <p class="fs-7">
+                        {{text}}
+                    </p>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <hr>
+        <div class="py-2">
+            <p class="fs-4">Followed User</p>
+            <ul class="list-unstyled">
+                {{#repeat 4}}
+                <li>
+                    <img src="@img/icons/icons.svg#bell_slash" class="svg-delete-dims" alt="delete"
+                         width="14" height="14">
+                    <span class="ms-1">
+                    user_{{@index}}
+                </span>
+                </li>
+                {{/repeat}}
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="col d-none d-md-block">
+    <button class="btn btn-purple text-white w-100" type="button">Create private chat</button>
+    <hr>
+    <div class="info" x-data x-ref="text">
+        <div class="card border-0 mb-3">
+            <div class="card-header bg-white border-0">
+                <div class="d-flex justify-content-between flex-nowrap"><p class="fs-4 mb-0">Here you can:</p>
+                    <img src="@img/icons/icons.svg#ci_close-big" @click="$refs.text.remove()"
+                         class="svg-ci_close-big-dims cr_point my-auto" alt="ci_close-big" width="24"
+                         height="24">
+                </div>
+            </div>
+            <div class="card-body">
+                <ul class="info__list list-unstyled">
+                    {{#each menu.aside}}
+                    <li class="info__list_li ps-3">{{text}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            <footer class="card-footer bg-white border-0">
+                <p>This is a new website so if you like this concept please create your own channel and invite your
+                    friends. Anything goes - memes, political discussion, shitposting, asking for advice or simply
+                    saying hello would help this site to feel alive tremendously. Try it, it's fun!</p>
+            </footer>
+        </div>
+        <hr>
+    </div>
+    <div class="py-2">
+        <p class="fs-4">Private Chats</p>
+        <ul class="list-unstyled">
+            {{#repeat 3}}
+            <li>
+                <img src="@img/icons/icons.svg#delete" class="svg-delete-dims" alt="delete"
+                     width="14" height="14">
+                <span class="ms-1">
+                    chat_{{@index}}
+                </span>
+            </li>
+            {{/repeat}}
+        </ul>
+    </div>
+    <hr>
+    <div class="py-2">
+        <p class="fs-4">Followed Channels</p>
+        <ul class="list-unstyled">
+            {{#each channels.followed}}
+            <li>
+                <img src="@img/icons/icons.svg#bell_slash"
+                     class="svg-bell_slash-dims"
+                     alt="bell_slash"
+                     width="14"
+                     height="14">
+                <span class="ms-1">
+                {{text}}
+                </span>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    <hr>
+    <div class="py-2">
+        <p class="fs-4">Followed Channels</p>
+        <ul class="list-unstyled">
+            {{#each threads.followed}}
+            <li>
+                <div>
+                    <img src="@img/icons/icons.svg#bell_slash"
+                         class="svg-bell_slash-dims"
+                         alt="bell_slash"
+                         width="14"
+                         height="14">
+                    <p class="d-inline">46246gf</p>
+                </div>
+                <p class="fs-7">
+                    {{text}}
+                </p>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    <hr>
+    <div class="py-2">
+        <p class="fs-4">Followed User</p>
+        <ul class="list-unstyled">
+            {{#repeat 4}}
+            <li>
+                <img src="@img/icons/icons.svg#bell_slash" class="svg-delete-dims" alt="delete"
+                     width="14" height="14">
+                <span class="ms-1">
+                    user_{{@index}}
+                </span>
+            </li>
+            {{/repeat}}
+        </ul>
+    </div>
+</div>

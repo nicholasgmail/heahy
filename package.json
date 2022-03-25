@@ -43,6 +43,7 @@
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html-nosvg": "^1.0.6",
     "gulp-zip": "^5.1.0",
+    "node-sass": "^7.0.1",
     "node-sass-tilde-importer": "^1.0.2",
     "panini": "^1.7.2",
     "postcss-preset-env": "^7.4.2",

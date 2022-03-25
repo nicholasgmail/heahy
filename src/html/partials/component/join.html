@@ -1,0 +1,18 @@
+<section>
+    <header class="container-xxl py-3">
+        <form action="">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter Channel Name"
+                       aria-label="Enter Channel Name" aria-describedby="button-addon2">
+                <button class="btn btn-purple text-white" type="button" id="button-addon2">Join</button>
+            </div>
+        </form>
+    </header>
+    <article class="container-xxl">
+        <h1 class="fs-4">Featured Channels</h1>
+        <div class="row pt-3">
+            {{>list}}
+            {{>menu_aside}}
+        </div>
+    </article>
+</section>
