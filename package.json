@@ -15,6 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "@alpinejs/intersect": "^3.9.2",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.4",
     "browser-sync": "^2.27.9",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -47,6 +49,7 @@
     "sass": "^1.49.9",
     "swiper": "^8.0.7",
     "vinyl-ftp": "^0.6.1",
+    "vinyl-named": "^1.1.0",
     "webp-converter": "^2.3.3",
     "webpack": "^5.70.0",
     "webpack-stream": "^7.0.0"

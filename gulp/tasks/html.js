@@ -3,7 +3,7 @@ import webpHtmlNosvg from "gulp-webp-html-nosvg";
 import versionNumber from "gulp-version-number";
 import panini from "panini";
 
-export async function resetPages(done) {
+export function resetPages(done) {
     panini.refresh();
     done();
 }
